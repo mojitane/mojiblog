@@ -2,6 +2,7 @@
 import type { PostFrontmatter } from 'src/lib/api';
 import { tagsConfig } from "src/data/tags";
 import readingTime from 'reading-time';
+import { Img } from 'astro-imagetools/components';
 
 export interface Props {
   content: PostFrontmatter
@@ -18,25 +19,9 @@ const {
     {
       heroImage && (
         <div class="aspect-[2/1] h-full w-full mb-12 relative select-none">
-          <img
-            width={720}
-            height={360}
-            src={heroImage}
-            alt={heroAlt}
-            class="object-cover w-full h-full rounded"
-          />
-          <img
-            loading="lazy"
-            src="/photo2.png"
-            alt=""
-            class="absolute left-0 top-0 w-full h-full object-cover mix-blend-overlay rounded"
-          />
-          <img
-            loading="lazy"
-            src="/profile.jpg"
-            alt=""
-            class="absolute -left-8 -bottom-8 h-32 w-32 rounded-full ring-8 ring-current text-zinc-900"
-          />
+          <Img loading="lazy" src={heroImage} width={1152} alt={heroAlt} attributes={{img: { class: "object-cover w-full h-full rounded aspect-[2/1]" }}} />
+          <Img loading="lazy" src="/photo2.png" width={1152} alt="" attributes={{img: { class: "absolute left-0 top-0 w-full h-full object-cover mix-blend-overlay rounded aspect-[2/1]" }}} />
+          <Img loading="lazy" src="/profile.jpg" alt="" attributes={{img: { class: "absolute -left-8 -bottom-8 h-32 w-32 rounded-full ring-8 ring-current text-zinc-900" }}} />
         </div>
       )
     }
