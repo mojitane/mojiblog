@@ -9,7 +9,7 @@ export interface Props {
   content: PostFrontmatter;
   frontmatter: PostFrontmatter;
   headings: { depth: string; slug: string; text: string }[];
-  rawContent: Function
+  rawContent: Function;
 }
 
 const { content, rawContent } = Astro.props as Props;

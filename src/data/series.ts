@@ -5,7 +5,7 @@ interface Series {
   image?: string;
 }
 interface SeriesConfig {
-    [key: string]: Series
+  [key: string]: Series;
 }
 
 export const seriesConfig = {

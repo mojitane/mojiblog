@@ -9,11 +9,20 @@ const pageConfig = {
   description: siteConfig.description,
 };
 
-const posts = Posts(await Astro.glob("./article/*.{md,mdx}")).isPublished().sortPostsDesc().getPosts();
+const posts = Posts(await Astro.glob("./article/*.{md,mdx}"))
+  .isPublished()
+  .sortPostsDesc()
+  .getPosts();
 ---
 
 <Layout pageConfig={pageConfig}>
   <div class="max-w-6xl mx-auto flex flex-col gap-16">
-    {posts.map((post) => <div><PostPreview post={post} /></div>)}
+    {
+      posts.map((post) => (
+        <div>
+          <PostPreview post={post} />
+        </div>
+      ))
+    }
   </div>
 </Layout>

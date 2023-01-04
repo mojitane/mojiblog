@@ -19,10 +19,32 @@ const {
 <article class="flex flex-col md:flex-row gap-8">
   <a
     href={post.url}
-    class="relative aspect-[2/1] md:aspect-[2/3] h-full w-full rounded md:max-w-sm select-none" {/*bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400*/}
+    class="relative aspect-[2/1] md:aspect-[2/3] h-full w-full rounded md:max-w-sm select-none"
+    {/*bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400*/}
   >
-    <Img loading="lazy" src={thumbnail} alt="" width={1152} attributes={{img: { class: "object-cover aspect-[2/1] md:aspect-[2/3] h-full w-full rounded" }}} />
-    <Img loading="lazy" src="/photo2.png" alt="" attributes={{img: { class: "absolute left-2 top-2 hover:left-0 hover:top-0 transition-all aspect-[2/1] md:aspect-[2/3] w-full h-full object-cover mix-blend-overlay rounded" }}} />
+    <Img
+      loading="lazy"
+      src={thumbnail}
+      alt=""
+      width={1152}
+      attributes={{
+        img: {
+          class:
+            "object-cover aspect-[2/1] md:aspect-[2/3] h-full w-full rounded",
+        },
+      }}
+    />
+    <Img
+      loading="lazy"
+      src="/photo2.png"
+      alt=""
+      attributes={{
+        img: {
+          class:
+            "absolute left-2 top-2 hover:left-0 hover:top-0 transition-all aspect-[2/1] md:aspect-[2/3] w-full h-full object-cover mix-blend-overlay rounded",
+        },
+      }}
+    />
     <!-- <img
       loading="lazy"
       src={thumbnail}
@@ -79,7 +101,10 @@ const {
                   <div
                     class={`rounded-full ${tagsConfig[singleTag]?.gradient} h-8 w-8 block`}
                   />
-                  <div class="pr-4 block"><span class="sr-only">Tag page for: </span>{tagsConfig[singleTag]?.title}</div>
+                  <div class="pr-4 block">
+                    <span class="sr-only">Tag page for: </span>
+                    {tagsConfig[singleTag]?.title}
+                  </div>
                 </div>
               </a>
             ))
