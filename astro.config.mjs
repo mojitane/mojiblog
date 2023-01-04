@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
-import { astroImageTools } from "astro-imagetools";
+// import { astroImageTools } from "astro-imagetools";
 
 
 // https://astro.build/config
@@ -13,5 +13,5 @@ import image from "@astrojs/image";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://moji.blog',
-  integrations: [mdx(), sitemap(), tailwind(), astroImageTools]
+  integrations: [mdx(), sitemap(), tailwind()]
 });
