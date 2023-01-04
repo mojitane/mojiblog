@@ -1,0 +1,32 @@
+---
+import ArticleHeader from "@components/ArticleHeader.astro";
+import Layout from "@layouts/Page.astro";
+import type { PostFrontmatter } from "src/lib/api";
+
+export interface Props {
+  file: string;
+  url: string;
+  content: PostFrontmatter;
+  frontmatter: PostFrontmatter;
+  headings: { depth: string; slug: string; text: string }[];
+  rawContent: Function
+}
+
+const { content, rawContent } = Astro.props as Props;
+
+const pageConfig = {
+  title: content.title,
+  description: content.description,
+};
+---
+
+<Layout pageConfig={pageConfig}>
+  <div class="max-w-6xl mx-auto">
+    <article class="">
+      <ArticleHeader content={content} rawContent={rawContent} />
+      <main class="mx-auto prose prose-lg prose-invert mb-32">
+        <slot />
+      </main>
+    </article>
+  </div>
+</Layout>

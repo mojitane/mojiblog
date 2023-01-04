@@ -1,0 +1,19 @@
+---
+import PostPreview from "@components/PostPreview.astro";
+import Layout from "@layouts/Page.astro";
+import { siteConfig } from "src/data/settings";
+import { Posts } from "src/lib/api";
+
+const pageConfig = {
+  title: siteConfig.title,
+  description: siteConfig.description,
+};
+
+const posts = Posts(await Astro.glob("./article/*.{md,mdx}")).isPublished().sortPostsDesc().getPosts();
+---
+
+<Layout pageConfig={pageConfig}>
+  <div class="max-w-6xl mx-auto flex flex-col gap-16">
+    {posts.map((post) => <div><PostPreview post={post} /></div>)}
+  </div>
+</Layout>

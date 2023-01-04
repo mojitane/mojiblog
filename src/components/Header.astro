@@ -1,0 +1,58 @@
+---
+import HeaderLink from '@components/HeaderLink.astro';
+import GithubIcon from '@components/svgIcons/GithubIcon.astro';
+import RssIcon from '@components/svgIcons/RssIcon.astro';
+import TwitterIcon from '@components/svgIcons/TwitterIcon.astro';
+
+export interface Props {
+  pageTitle: string;
+}
+
+const { pageTitle } = Astro.props as Props;
+---
+
+<header class="max-w-6xl prose-lg mx-auto py-12 mb-12">
+  <div class="md:flex">
+    <div class="flex-1 mb-4 md:mb-0">
+      <div class="p-2 relative">
+        <h2 class="text-2xl my-0 font-bold">
+          <a href="/" class="hover:text-purple-500 focus:text-purple-500"
+            ><span class="sr-only">{pageTitle}</span><span class="not-sr-only"
+              >m///</span
+            >
+          </a>
+        </h2>
+      </div>
+    </div>
+    <div class="flex-1 self-end pl-2">
+      <nav class="flex gap-4 md:place-content-end">
+        <!-- <HeaderLink href="/">Home</HeaderLink> -->
+        <!-- <HeaderLink href="/about">About</HeaderLink> -->
+        <HeaderLink
+          class="hover:border-none text-slate-300 hover:text-purple-500 focus:text-purple-500"
+          href="https://twitter.com/mojitane"
+          target="_blank"
+        >
+          <span class="sr-only">Link to Twitter profile</span>
+          <TwitterIcon />
+        </HeaderLink>
+        <HeaderLink
+          class="hover:border-none text-slate-300 hover:text-purple-500 focus:text-purple-500"
+          href="https://github.com/mojitane"
+          target="_blank"
+        >
+          <span class="sr-only">Link to GitHub profile</span>
+          <GithubIcon />
+        </HeaderLink>
+        <HeaderLink
+          class="hover:border-none text-slate-300 hover:text-purple-500 focus:text-purple-500"
+          href="/rss.xml"
+          target="_blank"
+        >
+          <span class="sr-only">Link to RSS feed</span>
+          <RssIcon />
+        </HeaderLink>
+      </nav>
+    </div>
+  </div>
+</header>

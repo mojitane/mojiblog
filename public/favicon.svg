@@ -1,0 +1,17 @@
+<svg
+  viewBox="0 0 10 10"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="gradient" gradientTransform="rotate(30)">
+      <stop offset="0%" stop-color="#d8b4fe" />
+      <stop offset="16%" stop-color="#cdadfd" />
+      <stop offset="33%" stop-color="#c1a5fd" />
+      <stop offset="50%" stop-color="#b49dfc" />
+      <stop offset="66%" stop-color="#a797fb" />
+      <stop offset="83%" stop-color="#9890fa" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+  </defs>
+  <circle cx="5" cy="5" r="4" fill="url('#gradient')" />
+</svg>

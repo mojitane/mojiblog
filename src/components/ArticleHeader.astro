@@ -1,0 +1,74 @@
+---
+import type { PostFrontmatter } from 'src/lib/api';
+import { tagsConfig } from "src/data/tags";
+import readingTime from 'reading-time';
+
+export interface Props {
+  content: PostFrontmatter
+  rawContent: Function
+}
+
+const {
+  content: { title, pubDate, heroAlt, heroImage, tags },
+  rawContent
+} = Astro.props as Props;
+---
+
+<header class="mb-24">
+    {
+      heroImage && (
+        <div class="aspect-[2/1] h-full w-full mb-12 relative select-none">
+          <img
+            width={720}
+            height={360}
+            src={heroImage}
+            alt={heroAlt}
+            class="object-cover w-full h-full rounded"
+          />
+          <img
+            loading="lazy"
+            src="/photo2.png"
+            alt=""
+            class="absolute left-0 top-0 w-full h-full object-cover mix-blend-overlay rounded"
+          />
+          <img
+            loading="lazy"
+            src="/profile.jpg"
+            alt=""
+            class="absolute -left-8 -bottom-8 h-32 w-32 rounded-full ring-8 ring-current text-zinc-900"
+          />
+        </div>
+      )
+    }
+    <div class="max-w-xl mx-auto">
+      <h1
+        class={`font-semibold text-4xl mb-2 text-transparent bg-clip-text ${
+          tagsConfig[tags[0]].gradient
+        }`}
+      >
+        {title}
+      </h1>
+      <div class="mb-2 text-zinc-400 flex gap-4 items-center">
+        <div class="flex gap-1">
+          {
+            tags.map((tag: keyof typeof tagsConfig) => (
+              <a
+                href={`/${tagsConfig[tag].slug}`}
+                class={`h-8 w-8 group relative transition-opacity rounded-full ${tagsConfig[tag].gradient}`}
+              >
+                <div
+                  class={`absolute -inset-0.5 z-[-1] motion-safe:group-hover:animate-[spin_2s_linear_infinite] saturate-200 ${tagsConfig[tag].gradient} rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity`}
+                />
+                <span class="sr-only">Tag page for: {tag}</span>
+              </a>
+            ))
+          }
+        </div>
+        <div>
+          {readingTime(rawContent()).text} ・ <time
+            >{pubDate}</time
+          >
+        </div>
+      </div>
+    </div>
+  </header>

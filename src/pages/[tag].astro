@@ -1,0 +1,65 @@
+---
+import { tagsConfig } from "src/data/tags";
+import PostPreview from "@components/PostPreview.astro";
+import Layout from "@layouts/Page.astro";
+import { siteConfig } from "src/data/settings";
+import { Posts } from "src/lib/api";
+
+export function getStaticPaths() {
+  return Object.values(tagsConfig).map((tag) => {
+    return {
+      params: {
+        tag: tag.slug,
+      },
+    };
+  });
+}
+
+const { tag } = Astro.params as { tag: keyof typeof tagsConfig };
+
+const pageConfig = {
+  title: siteConfig.title,
+  description: siteConfig.description,
+};
+
+const posts = Posts(await Astro.glob("./article/*.{md,mdx}"))
+  .isPublished()
+  .hasTags(tag)
+  .sortPostsDesc()
+  .getPosts();
+
+const currentTagConfig = tagsConfig[tag];
+---
+
+<Layout pageConfig={pageConfig}>
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-24">
+      <div class="flex gap-4 items-center">
+        <div
+          class={`h-12 w-12 aspect-square relative transition-opacity rounded-full ${currentTagConfig.gradient}`}
+        >
+          <div
+            class={`absolute -inset-0.5 motion-safe:animate-[spin_4s_linear_infinite] saturate-200 contrast-200 ${currentTagConfig.gradient} rounded-full blur opacity-70`}
+          >
+          </div>
+        </div>
+        <h1 class="text-5xl font-semibold">
+          Articles for <span
+            class={`text-transparent bg-clip-text ${currentTagConfig.gradient}`}
+            >{currentTagConfig.title}</span
+          >
+        </h1>
+      </div>
+      <!-- <p>{currentTagConfig.description}</p> -->
+    </div>
+    <div class="flex flex-col gap-16">
+      {
+        posts.map((post) => (
+          <div>
+            <PostPreview post={post} />
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</Layout>

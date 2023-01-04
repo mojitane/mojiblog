@@ -1,0 +1,22 @@
+---
+import Layout from "@layouts/Base.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import type { Props as BaseHeadProps } from "@components/BaseHead.astro";
+
+export interface Props {
+  pageConfig: BaseHeadProps;
+}
+
+const { pageConfig } = Astro.props as Props;
+---
+
+<Layout pageConfig={pageConfig}>
+  <div class="px-2 md:px-6 mb-32">
+    <Header pageTitle={pageConfig.title} />
+    <main class="px-2">
+      <slot />
+    </main>
+  </div>
+  <Footer />
+</Layout>
