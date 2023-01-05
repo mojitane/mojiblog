@@ -1,7 +1,7 @@
 export const siteConfig = {
   title: `moji blog`,
   description: `Blogs are cool again. Exploring different frameworks and technologies. Regular articles and short format content on all things Frontend.`,
-  url: `https://moji.blog`, // No trailing slash!
+  url: `https://www.moji.blog`, // No trailing slash!
   // JSON LD
   name: `moji blog`,
   // Twitter URL
