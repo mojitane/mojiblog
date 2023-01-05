@@ -1,6 +1,9 @@
 ---
 import "@fontsource/ibm-plex-sans";
 import "@fontsource/ibm-plex-sans/700.css";
+import { inject } from '@vercel/analytics';
+
+inject();
 
 export interface Props {
   title: string;
