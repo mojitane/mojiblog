@@ -10,7 +10,7 @@ thumbnail: "/nightsky.jpeg"
 thumbnailCredit: "Photo by kazuend on Unsplash"
 thumbnailAlt: "Photo of the night sky with mount Fuji"
 tags: ["astro", "dev-talk"]
-draft: true
+draft: false
 pinned: true
 featured: true
 ---
