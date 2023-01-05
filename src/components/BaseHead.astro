@@ -1,9 +1,6 @@
 ---
 import "@fontsource/ibm-plex-sans";
 import "@fontsource/ibm-plex-sans/700.css";
-import { inject } from '@vercel/analytics';
-
-inject();
 
 export interface Props {
   title: string;
@@ -45,6 +42,8 @@ const { title, description, image } = Astro.props as Props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} /> -->
+
+<script defer src="/_vercel/insights/script.js"></script>
 
 <style is:global>
   ::selection {
