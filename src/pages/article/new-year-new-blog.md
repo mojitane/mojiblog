@@ -63,4 +63,4 @@ Some might be longer, some might be old school tweet style. Let’s see where we
 
 <span class="text-gray-500 mr-3">➜</span> Adding new features here & making blog post styling interesting and whimsical #buildinpublic
 
-If you reached this point – come over and say hello at [twitter/moji](https://twitter.com/mojitane) 👋
+If you reached this point – come over and say hello at [twitter/mojitane](https://twitter.com/mojitane) 👋
