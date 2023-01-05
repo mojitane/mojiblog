@@ -16,9 +16,10 @@ export function getStaticPaths() {
 }
 
 const { tag } = Astro.params as { tag: keyof typeof tagsConfig };
+const currentTagConfig = tagsConfig[tag];
 
 const pageConfig = {
-  title: siteConfig.title,
+  title: `Articles for ${currentTagConfig.title} – ${siteConfig.title}`,
   description: siteConfig.description,
 };
 
@@ -28,7 +29,6 @@ const posts = Posts(await Astro.glob("./article/*.{md,mdx}"))
   .sortPostsDesc()
   .getPosts();
 
-const currentTagConfig = tagsConfig[tag];
 ---
 
 <Layout pageConfig={pageConfig}>

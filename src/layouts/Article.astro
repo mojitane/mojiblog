@@ -1,6 +1,7 @@
 ---
 import ArticleHeader from "@components/ArticleHeader.astro";
 import Layout from "@layouts/Page.astro";
+import { siteConfig } from "src/data/settings";
 import type { PostFrontmatter } from "src/lib/api";
 
 export interface Props {
@@ -15,7 +16,7 @@ export interface Props {
 const { content, rawContent } = Astro.props as Props;
 
 const pageConfig = {
-  title: content.title,
+  title: `${content.title} – ${siteConfig.title}`,
   description: content.description,
 };
 ---
