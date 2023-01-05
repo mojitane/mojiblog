@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/Article.astro"
 title: "New year, new blog. Getting started with Astro."
-description: "The trend to self-hosted and owned blogs is here in full force. Fuelled through Twitter and other social media uncertainties and people wanting their own data back. 'Bring Back Blogging' – a decentralized, curated, diverse creative collective"
+description: "The trend to self-hosted and owned blogs is here in full force. Fuelled through Twitter and other social media uncertainties and people wanting their own data back. 'Bring Back Blogging' – a decentralized, curated, diverse creative collective."
 pubDate: "2023-01-05"
 heroImage: "/nightsky.jpeg"
 heroImageCredit: "Photo by kazuend on Unsplash"
