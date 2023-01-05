@@ -10,24 +10,24 @@ interface TagsConfig {
 }
 
 export const tagsConfig = {
-  "dev-talk": {
-    title: "dev talk",
+  astro: {
+    title: "Astro",
     description: "",
-    slug: "dev-talk",
+    slug: "astro",
     color: "purple-300",
     gradient: "bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400",
   },
-  work: {
-    title: "work",
+  "dev-talk": {
+    title: "Dev Talk",
     description: "",
-    slug: "work",
+    slug: "dev-talk",
     color: "green-500",
     gradient: "bg-gradient-to-r from-yellow-200 via-green-200 to-green-500",
   },
-  astro: {
-    title: "astro",
+  byte: {
+    title: "Byte",
     description: "",
-    slug: "astro",
+    slug: "byte",
     color: "orange-400",
     gradient: "bg-gradient-to-r from-rose-400 to-orange-300",
   },

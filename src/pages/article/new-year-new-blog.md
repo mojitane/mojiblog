@@ -1,42 +1,66 @@
 ---
 layout: "../../layouts/Article.astro"
 title: "New year, new blog. Getting started with Astro."
-description: "The trend to self-hosted and owned blogs is here in full force. Fueled through the Twitter and other social media uncertanties and people wanting their own data back. Lets explore how you can build a blog with Astro in under a day."
-pubDate: "2023-01-01"
+description: "The trend to self-hosted and owned blogs is here in full force. Fuelled through Twitter and other social media uncertainties and people wanting their own data back."
+pubDate: "2023-01-05"
 heroImage: "/nightsky.jpeg"
 heroImageCredit: "Photo by kazuend on Unsplash"
 heroAlt: "Photo of the night sky with mount Fuji"
 thumbnail: "/nightsky.jpeg"
 thumbnailCredit: "Photo by kazuend on Unsplash"
 thumbnailAlt: "Photo of the night sky with mount Fuji"
-tags: ["dev-talk", work, astro]
+tags: ["astro", "dev-talk"]
 draft: true
 pinned: true
 featured: true
 ---
+The trend to self-hosted and owned blogs is here in full force. Fuelled through Twitter and other social media uncertainties and people wanting their own data back. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+## Blogging and Twitter
+Having dabbled in travel and tech blogging in the past on different sites, dev.to or WordPress – spurred on by the [Bring Back Blogs! January 2023](https://bringback.blog/) initiative and especially Chris Coyiers blog post about it ([Bring Back Blogging - Chris Coyier](https://chriscoyier.net/2022/12/26/bring-back-blogging/)) I used the time over the holidays to whip-up a new design and fresh blog with Astro.
+Still a work in progress, but you can read this – right? Means it can’t be that bad.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+The **Bring Back Blogging** initiative’s goal is to, well, get people back to blogging and especially sharing it via RSS. That means having it easily available for any kind of consumption the reader wants to engage in.
+While I am absolutely on-board with their idea for this bringing <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 via-orange-300 to-red-400 font-semibold">energy towards a decentralized, curated, diverse creative collective — just one interesting corner of the internet where we can all pool our networks to lift us all up</span> – I am also just using this as a point to kick start writing more again.
 
-# New section
+### Overcoming the wall
+Blogging feels like it has quite the hurdle to get started with. After all, aren’t most blogs full of super interesting and researched articles? Long series or tutorials where you wonder why they are free anyway… like all the gold Josh W Comeau produces ([Josh W Comeau](https://joshwcomeau.com/))?
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+But, as Chris Coyier points out. This blog framing is the main culprit, and it can be different:
 
-## Subsection is here
+> I wonder if the term “blog” has too much baggage. Too much history for it to really catch on again and make a dent.   
+> Maybe “publish your own feed” is a better framing. “Own your RSS.” A feed doesn’t care what it contains. It is content-style agnostic. It’s just timestamped HTML, in a way. Put some audio in it, and it’s a podcast. A feed could be exactly what you would have tweeted before tweeting became cringe.
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+So, let’s all relax a little bit. There is room for highly researched multipart series, but there is also space for a fun and interesting short content RSS world.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+![Photo of laptop being opened](/laptop_opened.jpg)
 
-## Subsection is here
+## Not goals but themes
+I recently read a quote along the lines of: „Let's stop creating big goals each year and instead let’s have themes. Like **this is the year of Yoga** 🧘“.
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+Following this, I will also go with flavor 🍦 of the year instead of strict goals. But still, you can expect to find weekly posts in this space about everything
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+* React and NextJs
+* Astro
+* tRPC and other emerging tech
+* Frontend Tooling in General
+* Deep Dives in interesting technologies
+* <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 via-orange-300 to-red-400 font-semibold">#buildinpublic</span>
 
-## Subsection is here
+## Looking Ahead
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+Some might be longer, some might be old school tweet style. Let’s see where we go from here. I'm looking forward to learning a lot and making new friends along the way.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+**In the pipeline ⚡ is:**
+
+<span class="text-gray-500 mr-3">➜</span> Smaller posts during the week  
+
+<span class="text-gray-500 mr-3">➜</span> My experience building an Astro blog ✨ and the CMS options you have for your content  
+
+<span class="text-gray-500 mr-3">➜</span> Exploring container queries  
+
+<span class="text-gray-500 mr-3">➜</span> RSS in 2023
+
+<span class="text-gray-500 mr-3">➜</span> Adding new features here & making blog post styling interesting and whimsical #buildinpublic
+
+If you reached this point – come over and say hello at [twitter/moji](https://twitter.com/moji) 👋
