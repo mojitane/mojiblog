@@ -19,7 +19,7 @@ Being social on your own platform is difficult. Comment systems are often underu
 ## What are webmentions?
 
 Webmentions [webmention.io](https://webmention.io/) are a way to bring social activity and interactivity to your site without having it on your platform itself or needing to have complex systems in place.  
-Harness the <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 via-orange-300 to-red-400 font-semibold">activity, audience, and functionality from existing platform</span> and don't split audiences.
+Harness the <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 via-orange-300 to-red-400 font-semibold">activity, audience, and functionality from existing platforms</span> and don't split audiences.
 
 Using webmention.io, a crawler will find any and all mentions of your content on selected networks like Twitter and collect them for your usage. It will also
 1. Verify the linking
