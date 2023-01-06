@@ -18,6 +18,7 @@ const { content, rawContent } = Astro.props as Props;
 const pageConfig = {
   title: `${content.title} – ${siteConfig.title}`,
   description: content.description,
+  image: content.heroImage
 };
 ---
 
