@@ -9,7 +9,7 @@ heroAlt: "Modern architecture: Multiple archways with a dark void at the end."
 thumbnail: "/void1.jpeg"
 thumbnailCredit: "Photo by CJ Dayrit on Unsplash"
 thumbnailAlt: "Modern architecture: Multiple archways with a dark void at the end."
-tags: ["byte"]
+tags: ["byte", "dev-talk"]
 draft: false
 pinned: true
 featured: true
